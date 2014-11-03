@@ -1,0 +1,141 @@
+/*******************************
+** Setting up common elements **
+*******************************/
+ * {
+	margin: 0;
+	padding: 0px;
+	font-family: sans-serif;
+	font-size:16px; }
+
+html, body {
+	background-color:#FFF;
+	height:100%;
+	padding-bottom: -40px; }
+
+// Main color is #A10000
+// Dark color is #730000
+// Deactivated color is #939393
+
+/*********************************************************************************************
+** Styling boxes, setting up their sizes, adding some color, and calling for a unique font. **
+*********************************************************************************************/
+.content {
+	//Do not delete, breaks website (no idea why)
+	}
+	
+.wrapper {
+	min-width:1000px;
+	max-width:1000px;
+	margin-left:auto;
+	margin-right:auto; }
+	
+.steps {
+	background-color:#F9F9F9;
+	margin-bottom:0px;
+	padding:0px;
+	border-bottom:5px solid #A10000;
+	border-top:5px solid #A10000;
+	padding:7px; }
+	
+.main {
+	//background-color:#F9F9F9;
+	margin-bottom:10px;
+	padding:15px;
+	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+	height: 500px;
+	margin: 0 auto -40px; /* the bottom margin is the negative value of the footer's height */ }
+	
+.leftmain {
+	margin-left:auto;
+	width:475px;
+	float:left;
+	padding-left:25px;
+	min-height:500px; }
+
+.rightmain {
+	margin-right:auto;
+	width:475px;
+	float:right;
+	padding-right:25px;
+	background-color:#000; }
+
+footer {
+	width:100%;
+	background-color:#F9F9F9;
+	height:40px;
+	line-height:40px; }
+	
+.push {
+	height:40px; }
+	
+.input_main {
+	margin-top:5px;
+	margin-bottom:5px; }
+
+/***********************
+** Navigation bar fun **
+***********************/
+#navbar {
+	height:100px;
+	width:100%;
+	margin-bottom:5px;
+	background-color:#F9F9F9; }
+
+#navbar ul { 
+	margin: 0; 
+	padding: 5px; 
+	list-style-type: none; 
+	text-align: center; 
+	position:static;
+	float:right;
+	line-height:150px; } 			/* Line height is set to height of container div, thus centerizing the text. */ 
+ 
+#navbar ul li {  
+	display: inline; } 
+ 
+#navbar ul li a { 
+	text-decoration: none; 
+	font-size:20px;
+	padding: .2em 1em; 
+	color: #f9f9f9; } 
+ 
+#navbar ul li a:hover { 
+	color: #161616; 
+	background-color: #f7f7f6; } 
+	
+/****************************
+** Classes to align images **
+****************************/
+ .left {
+ 	float:left; }
+ .right {
+	float:right; }
+ .center {
+ 	margin-top:10px;
+ 	margin-bottom:10px; }
+ 
+/****************************
+** Container div styling - text is put inside and set to the height of the image next to it.  Keeps the content div propped open so the image isn't in the footer. **
+****************************/
+
+/********************
+** Button Classes! **
+*********************/
+
+.btn {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  background: #a10000;
+  padding: 8px 12px 8px 12px;
+  text-decoration: none;
+  margin:10px;
+}
+
+.btn:hover {
+  background: #730000;
+  text-decoration: none;
+}
