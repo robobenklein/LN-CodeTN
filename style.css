@@ -24,10 +24,9 @@ html, body {
 	}
 	
 .wrapper {
-	min-width:1000px;
-	max-width:1000px;
 	margin-left:auto;
-	margin-right:auto; }
+	margin-right:auto;
+	max-width:1000px; }
 	
 .steps {
 	background-color:#F9F9F9;
@@ -38,26 +37,22 @@ html, body {
 	padding:7px; }
 	
 .main {
-	//background-color:#F9F9F9;
+	background-color:#F9F9F9;
 	margin-bottom:10px;
 	padding:15px;
-	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
-	height: 500px;
-	margin: 0 auto -40px; /* the bottom margin is the negative value of the footer's height */ }
+	min-height:70%; }
 	
 .leftmain {
 	margin-left:auto;
 	width:475px;
 	float:left;
-	padding-left:25px;
-	min-height:500px; }
+	padding-left:25px; }
 
 .rightmain {
 	margin-right:auto;
 	width:475px;
 	float:right;
-	padding-right:25px;
-	background-color:#000; }
+	padding-right:25px; }
 
 footer {
 	width:100%;
