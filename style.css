@@ -4,20 +4,21 @@
 * {
 	margin: 0;
 	padding: 0px;
-	font-family: sans-serif;
+	font-family: "Helvetica", "Arial", sans-serif;
 	font-size:16px; }
 
 html, body {
-	background-color:#FFF; }
+	background-color:#F9F9F9; }
 	
 footer {
 	width:100%;
 	/*background-color:#F9F9F9;*/
-	background-color:#FFF;
+	background-color:#A10000;
 	height:40px;
 	line-height:40px;
 	position:fixed;
-	bottom:0; }
+	bottom:0;
+	color:#FFF; }
 
 /*Main color is #A10000
  Dark color is #730000
@@ -33,12 +34,18 @@ footer {
 	
 .steps {
 	background-color:#F9F9F9;
-	margin-bottom:0px;
+	margin:0px;
 	padding:0px;
 	border-bottom:5px solid #A10000;
 	border-top:5px solid #A10000;
 	padding:7px;
-	height:16px;}
+	height:120px; }
+
+.check {
+	position:relative;
+	top:-25px;
+	padding-left:10px;
+	padding-right:15px; }
 	
 .main {
 	background-color:#F9F9F9;
@@ -61,8 +68,8 @@ footer {
 	height:600px; }
 	
 .input_main {
-	margin-top:5px;
-	margin-bottom:5px; }
+	margin-top:3px;
+	margin-bottom:15px; }
 	
 /****************************
 ** Classes to align images **
@@ -74,8 +81,9 @@ footer {
 
 #navbar {
 	height:40px;
-	background-color:#F9F9F9;
-	line-height:40px; }
+	background-color:#A10000;
+	line-height:40px;
+	color:#FFF; }
 
 /********************
 ** Button Classes! **
