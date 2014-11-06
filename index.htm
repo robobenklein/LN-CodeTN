@@ -1,29 +1,47 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>CodeTN Project - Home</title>
+  <title>CodeTN Project - Step 1</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
+<!--
+Beginning of the navigation bar code.
+-->
 <body>
 <div id="navbar">
 	<div class="wrapper">
-	tlogo here
-	</div>
-</div>
+	<img src="lnstem.png" alt="LNSTEM Logo">
+	</div><!-- End wrapper -->
+</div><!-- End navbar -->
+<!--
+End of the navigation bar code.
+-->
 
+<!--
+Beginning of the step status bar code.
+-->
 <div class="steps">
 	<div class="wrapper">
 	<img src="CheckmarkS1High.png" class="check" alt="Step 1" height="167" height="100">
 	<img src="CheckmarkS2.png" class="check" alt="Step 2" height="167" height="100">
 	<img src="CheckmarkS3.png" class="check" alt="Step 3" height="167" height="100">
-	</div>
-</div>
+	</div><!-- End wrapper -->
+</div><!-- End steps -->
+<!--
+End of the step status bar code.
+-->
 
+<!--
+Beginning of the main, clickable content.
+-->
 <div class="main">
 	<div class="wrapper">
 		
-		<div style="clear:both;" class="input_main">Please fill out all the boxes below to continue.</div>
+		<div style="clear:both;" class="input_main">Welcome to the LNSTEM Solar Panel Feasibility calculator! To begin
+		calculating if solar energy is a good choice for your school, please fill in all the boxes and click the red button
+		below.  If you need help, tap/hover the star on the right side of the respective input box.</div>
+		
 		
 		<div class="leftmain">
 		<select class="input_main">
@@ -42,8 +60,10 @@
 			<option value="SouthDoyle">South-Doyle High School</option>
 			<option value="West">West High School</option>
 		</select><br>
+		
+		
 		Cost per kilowatt hour of electricity:<br>
-		<input class="input_main" type="text" name="kwh" placeholder="0.00" tabindex="1" required><br>
+		<input class="input_main" type="text" name="kwh" placeholder="0.00" tabindex="1" required><span style="font-size:24px;">*</span><br>
 		Number of panels wanted:<br>
 		<input class="input_main" type="text" name="panelcount" placeholder="1" tabindex="2" required><br>
 		Budget (in dollars):<br>
@@ -63,24 +83,16 @@
 		
 	</div> <!-- end of wrapper class -->
 </div> <!-- end of main -->
-
+<!--
+End of the main, clickable content.
+-->
 
 
 <footer>
 	<div class="wrapper">
 	Copyright &copy; 2014 L&N STEM Academy. All rights reserved.
-	</div>
-</footer>
+	</div><!-- end of wrapper -->
+</footer><!-- end of footer -->
 
 </body>
 </html>
-
-<!-- To-do List:
-Make that drop down menu an unordered list
-Create seperate pages for each step.
-Correct colors.
-Implement step images.
-Have someone make a logo
-
-
--->
