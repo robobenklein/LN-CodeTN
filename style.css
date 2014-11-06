@@ -37,13 +37,12 @@ footer {
 	margin:0px;
 	padding:0px;
 	border-bottom:5px solid #A10000;
-	border-top:5px solid #A10000;
 	padding:7px;
 	height:120px; }
 
 .check {
 	position:relative;
-	top:-25px;
+	top:-27px;
 	padding-left:10px;
 	padding-right:15px; }
 	
@@ -80,10 +79,11 @@ footer {
 	float:right; }
 
 #navbar {
-	height:40px;
+	height:60px;
 	background-color:#A10000;
-	line-height:40px;
-	color:#FFF; }
+	line-height:80px;
+	color:#FFF;
+	padding:10px; }
 
 /********************
 ** Button Classes! **
