@@ -3,6 +3,7 @@
 <head>
   <title>CodeTN Project - Step 1</title>
   <link rel="stylesheet" href="style.css">
+  <script language="javascript" type="text/javascript" src="scroll.js"></script>
 </head>
 
 <!--
@@ -11,7 +12,8 @@ Beginning of the navigation bar code.
 <body>
 <div id="navbar">
 	<div class="wrapper">
-	<img src="lnstem.png" alt="LNSTEM Logo">
+	<img src="lnstem.png" class="left" alt="Team LNSTEM.">
+	<img src="solarcalculator.png" class="right" alt="Solar Calculator made by team LNSTEM.">
 	</div><!-- End wrapper -->
 </div><!-- End navbar -->
 <!--
@@ -45,20 +47,16 @@ Beginning of the main, clickable content.
 		
 		<div class="leftmain">
 		<select class="input_main">
-			<option value="AustinEast">Austin-East Magnet High School</option>
-			<option value="Bearden">Bearden High School</option>
-			<option value="Career">Career Magnet Academy</option>
-			<option value="Central">Central High School</option>
+			<option value="AmherstElem">Amherst Elementary School</option>
+			<option value="AmherstMid">Amherst Middle School</option>
 			<option value="Farragut">Farragut High School</option>
-			<option value="Fulton">Fulton High School</option>
-			<option value="Gibbs">Gibbs High School</option>
-			<option value="Halls">Halls High School</option>
-			<option value="HardenValley">Hardin Valley Academy</option>
-			<option value="Karns">Karns High School</option>
-			<option value="STEM">L&N STEM Academy</option>
+			<option value="GibbsElem">Gibbs Elementary School</option>
+			<option value="GibbsHigh">Gibbs High School</option>
+			<option value="HardinValley">Hardin Valley Academy</option>
+			<option value="KarnsMid">Karns Middle School</option>
+			<option value="KarnsHigh">Karns High School</option>
 			<option value="Powell">Powell High School</option>
-			<option value="SouthDoyle">South-Doyle High School</option>
-			<option value="West">West High School</option>
+			<option value="WestValley">West Valley Middle School</option>
 		</select><br>
 		
 		
@@ -77,10 +75,10 @@ Beginning of the main, clickable content.
 	
 		<div class="rightmain">
 		<img src="https://maps.googleapis.com/maps/api/staticmap?center=401+henley+street,knoxville,tn=10&size=450x350" height="350" width="450" alt="This is the map for L&N STEM Academy.">
-		You could fit x panels on this campus.<br>
-		<button class="btn">Click to Continue</button>
+		You could fit <b>x</b> panels on this campus.<br>
 		</div> <!-- end of right main -->
 		
+		<div id="buttons"><button class="red left">Help</button><button class="red right">Continue</button></div>
 	</div> <!-- end of wrapper class -->
 </div> <!-- end of main -->
 <!--
@@ -96,3 +94,5 @@ End of the main, clickable content.
 
 </body>
 </html>
+<!-- http://jsfiddle.net/apaul34208/ZyKar/3/ --> 
+<!-- http://jsfiddle.net/JVYq7/ -->
