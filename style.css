@@ -12,14 +12,19 @@ html, body {
 	
 footer {
 	width:100%;
-	/*background-color:#F9F9F9;*/
 	background-color:#A10000;
 	height:40px;
 	line-height:40px;
 	position:fixed;
 	bottom:0;
 	color:#FFF; }
+	
+.left {
+	float:left; }
 
+.right {
+	float:right; }
+	
 /*Main color is #A10000
  Dark color is #730000
  Deactivated color is #939393
@@ -49,7 +54,6 @@ footer {
 .main {
 	background-color:#F9F9F9;
 	padding:15px;
-	overflow:hidden;
 	height:100%; }
 	
 .leftmain {
@@ -57,26 +61,18 @@ footer {
 	width:475px;
 	float:left;
 	padding-left:25px;
-	height:600px; }
+	height:500px; }
 
 .rightmain {
 	margin-right:auto;
 	width:475px;
 	float:right;
 	padding-right:25px;
-	height:600px; }
+	height:500px; }
 	
 .input_main {
 	margin-top:3px;
 	margin-bottom:15px; }
-	
-/****************************
-** Classes to align images **
-****************************/
- .left {
- 	float:left; }
- .right {
-	float:right; }
 
 #navbar {
 	height:60px;
@@ -85,11 +81,17 @@ footer {
 	color:#FFF;
 	padding:10px; }
 
+#buttons {
+	height:40px;
+	width:1000px;
+	position:fixed;
+	bottom:50px; }
+
 /********************
 ** Button Classes! **
 *********************/
 
-.btn {
+.red {
 	-webkit-border-radius: 3;
 	-moz-border-radius: 3;
 	border-radius: 3px;
@@ -99,9 +101,9 @@ footer {
 	background: #a10000;
 	padding: 8px 12px 8px 12px;
 	text-decoration: none;
-	margin:5px 5px 5px 0px;
+	margin:5px;
 	border:0px; }
 
-.btn:hover {
+.red:hover {
 	background: #730000;
 	text-decoration: none; }
