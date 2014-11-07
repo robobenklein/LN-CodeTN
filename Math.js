@@ -1,9 +1,9 @@
 function math()
 {
-var kwh = index.getElementById('kwh').value;
-var pannelCount = index.getElementById('pannelCount').value;
-var budget = index.getElementById('budget').value;
-var payoff = index.getElementById('payoff').value;
+var kwh = document.getElementById('kwh').value;
+var pannelCount = document.getElementById('pannelCount').value;
+var budget = document.getElementById('budget').value;
+var payoff = document.getElementById('payoff').value;
 var averagePan;
 var kwhPerPan;
 var Feasibilty;
