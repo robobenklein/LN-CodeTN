@@ -19,6 +19,9 @@ footer {
 	bottom:0;
 	color:#FFF; }
 	
+a {
+	text-decoration:none; }
+
 .left {
 	float:left; }
 
