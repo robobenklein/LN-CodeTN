@@ -50,6 +50,7 @@ Beginning of the main, clickable content.
                 function showRoofSize(school) {
                         document.getElementById("roofSize").innerHTML = getRoofSize(school) + "<sup>2</sup>";
                         document.getElementById("googlemap").innerHTML = "<img src=\"" + getSchoolURL(school) + "\" height=\"350\" width=\"450\" alt=\"This is the Google Map for the selected School.\">";
+                        setCookie("school", school, 5);
                 }
                 </script>
                 
