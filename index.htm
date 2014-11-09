@@ -49,6 +49,7 @@ Beginning of the main, clickable content.
                 <script type="text/javascript">
                 function showRoofSize(school) {
                         document.getElementById("roofSize").innerHTML = getRoofSize(school) + "<sup>2</sup>";
+                        document.getElementById("googlemap").innerHTML = "<img src=\"" + getSchoolURL(school) + "\" height=\"350\" width=\"450\" alt=\"This is the Google Map for the selected School.\">";
                 }
                 </script>
                 
@@ -67,8 +68,8 @@ Beginning of the main, clickable content.
                 This roof is<br><span id="roofSize" style="font-size:150px; font-weight:bold;">x<sup>2</sup></span><br> meters in area.<br><!-- This is where we need to list the size of the roof top in meters, Ben -->
                 </div> <!-- end of left main -->
         
-                <div class="rightmain">
-                <img src="https://maps.googleapis.com/maps/api/staticmap?center=401+henley+street,knoxville,tn=10&size=450x350" height="350" width="450" alt="This is the map for L&N STEM Academy.">
+                <div id="googlemap" class="rightmain">
+                <img src="https://maps.googleapis.com/maps/api/staticmap?center=401+henley+street,knoxville,tn=10&size=450x350" height="350" width="450" alt="This is the Google Map for the selected School.">
                 
                 </div> <!-- end of right main -->
                 
