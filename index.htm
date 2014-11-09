@@ -46,20 +46,25 @@ Beginning of the main, clickable content.
                 calculating if solar energy is a good choice for your school, select your school from the drop down list, then click continue.
                 If you need help, click the help box in the bottom left hand corner.</div>
                 
+                <script type="text/javascript">
+                function showRoofSize(school) {
+                        document.getElementById("roofSize").innerHTML = getRoofSize(school) + "<sup>2</sup>";
+                }
+                </script>
                 
                 <div class="leftmain" style="text-align:center;">
-                <select class="input_main">
-                        <option value="AmherstElem">Amherst Elementary School</option>
-                        <option value="Farragut">Farragut High School</option>
-                        <option value="GibbsElem">Gibbs Elementary School</option>
-                        <option value="GibbsHigh">Gibbs High School</option>
-                        <option value="HardinValley">Hardin Valley Academy</option>
-                        <option value="KarnsMid">Karns Middle School</option>
-                        <option value="KarnsHigh">Karns High School</option>
-                        <option value="Powell">Powell High School</option>
-                        <option value="WestValley">West Valley Middle School</option>
+                <select class="input_main" name="slct" id="slct" onchange="showRoofSize(this.value)">
+                        <option value="Amherst Elementary School">Amherst Elementary School</option>
+                        <option value="Farragut High School">Farragut High School</option>
+                        <option value="Gibbs Elementary School">Gibbs Elementary School</option>
+                        <option value="Gibbs High School">Gibbs High School</option>
+                        <option value="Hardin Valley Academy">Hardin Valley Academy</option>
+                        <option value="Karns Middle School">Karns Middle School</option>
+                        <option value="Karns High School">Karns High School</option>
+                        <option value="Powell High School">Powell High School</option>
+                        <option value="West Valley Middle School">West Valley Middle School</option>
                 </select><br>
-                This roof is<br><span style="font-size:150px; font-weight:bold;">x<sup>2</sup></span><br> meters in area.<br><!-- This is where we need to list the size of the roof top in meters, Ben -->
+                This roof is<br><span id="roofSize" style="font-size:150px; font-weight:bold;">x<sup>2</sup></span><br> meters in area.<br><!-- This is where we need to list the size of the roof top in meters, Ben -->
                 </div> <!-- end of left main -->
         
                 <div class="rightmain">
