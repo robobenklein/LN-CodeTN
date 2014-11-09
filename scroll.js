@@ -1,9 +1,8 @@
 $(document).scroll(function () {
     var y = $(this).scrollTop();
-    if (y > 400) {
-        $('#buttons').fadeIn();
+    if (y > 200) {
+        $('.buttons').fadeIn();
     } else {
-        $('#buttons').fadeOut();
+        $('.buttons').fadeOut();
     }
-
 });

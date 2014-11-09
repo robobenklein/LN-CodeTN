@@ -85,11 +85,13 @@ a {
 	color:#FFF;
 	padding:10px; }
 
-#buttons {
+.buttons {
 	height:40px;
 	width:1000px;
 	position:fixed;
-	bottom:50px; }
+	bottom:50px;
+	display:none;
+	z-index:1;}
 
 /********************
 ** Button Classes! **
