@@ -1,6 +1,22 @@
-/*******************************
-** Setting up common elements **
-*******************************/
+/*****************************************************
+* This code is owned by team LNSTEM at the L&N STEM  *
+* Academy in Knoxville, Tennessee. If you would like *
+* to inquire more about this code, please email:	 *
+* s731875@student.knoxschools.org and put "Solar 	 *
+* Calculator" in the subject line. Please do not use *
+* any part of this code unless permission has been 	 *
+* specifically given.								 *
+*****************************************************/
+/*****************************************************
+* Main red color is #A10000							 *
+* Dark red color is #730000						  	 *
+* Deactivated grey color is #939393					 *
+*****************************************************/
+
+
+/*****************************************************
+* 			 Setting up common elements 			 *
+*****************************************************/
 * {
 	margin: 0;
 	padding: 0px;
@@ -27,14 +43,12 @@ a {
 
 .right {
 	float:right; }
-	
-/*Main color is #A10000
- Dark color is #730000
- Deactivated color is #939393
-*/
-/*********************************************************************************************
-** Styling boxes, setting up their sizes, adding some color, and calling for a unique font. **
-*********************************************************************************************/
+
+/*****************************************************
+* Styling boxes, setting up their sizes, adding some *
+* color, creating a sufficient padding, and adding	 *
+* positioning correctly on the page	 				 *
+*****************************************************/
 .wrapper {
 	margin-left:auto;
 	margin-right:auto;
@@ -65,19 +79,40 @@ a {
 	width:475px;
 	float:left;
 	padding-left:25px;
-	height:500px; }
+	height:475px; }
 
 .rightmain {
 	margin-right:auto;
 	width:475px;
 	float:right;
 	padding-right:25px;
-	height:500px; }
+	height:475px; }
+
+#navbar {
+	height:60px;
+	background-color:#A10000;
+	line-height:80px;
+	color:#FFF;
+	padding:10px; }
+	
+.information {
+	clear:both;
+	font-weight:bold;
+	margin-top:3px;
+	margin-bottom:15px;
+	padding:6px;
+	border: 1px solid #c4c4c4;
+    font-size: 16px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9; }
 	
 .input_main {
 	margin-top:3px;
 	margin-bottom:15px;
-	padding:6px;
 	border: 1px solid #c4c4c4;
     font-size: 16px;
     padding: 4px;
@@ -96,13 +131,6 @@ a {
     -webkit-box-shadow: 0px 0px 8px #D40000;
     transition: box-shadow linear 1s; }
 
-#navbar {
-	height:60px;
-	background-color:#A10000;
-	line-height:80px;
-	color:#FFF;
-	padding:10px; }
-
 .buttons {
 	height:40px;
 	width:1000px;
@@ -110,9 +138,13 @@ a {
 	bottom:50px;
 	z-index:1;}
 
-/********************
-** Button Classes! **
-*********************/
+.help {
+	font-weight:bold;
+	font-style:italic; }
+
+/*****************************************************
+* 					Button Classes!		   			 *
+*****************************************************/
 
 .red {
 	-webkit-border-radius: 3;
