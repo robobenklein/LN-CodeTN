@@ -1,0 +1,35 @@
+Amherst Elementary School
+URL: http://maps.googleapis.com/maps/api/staticmap?center=5101+Schaad+Rd,+Tennessee+37931&zoom=17&scale=false&size=450x350&maptype=satellite&sensor=false&format=png&visual_refresh=true
+Roof Size: 6200 meters squared
+
+Farragut High School
+URL: http://maps.googleapis.com/maps/api/staticmap?center=11237+Kingston+Pike,+Knoxville,+TN+37934&zoom=17&scale=false&size=450x350&maptype=satellite&sensor=false&format=png&visual_refresh=true
+Roof Size: 10315 meters squared
+
+Gibbs Elementary School
+URL: http://maps.googleapis.com/maps/api/staticmap?center=7700+Tazewell+Pike,+TN+37721&zoom=17&scale=false&size=450x350&maptype=satellite&sensor=false&format=png&visual_refresh=true
+Roof Size: 10400 meters squared
+
+Gibbs High School
+URL: http://maps.googleapis.com/maps/api/staticmap?center=7628+Tazewell+Pike,+Corryton,+TN+37721&zoom=17&scale=false&size=450x350&maptype=satellite&sensor=false&format=png&visual_refresh=true
+Roof Size: 12520 meters squared
+
+Hardin Valley Academy
+URL: http://maps.googleapis.com/maps/api/staticmap?center=11345+Hardin+Valley+Road+Knoxville+,+TN+37932&zoom=17&scale=1&size=450x350&maptype=satellite&sensor=false&format=png&visual_refresh=true
+Roof Size: 13205 meters squared
+
+Karns Middle School
+URL: http://maps.googleapis.com/maps/api/staticmap?center=2925+Gray+Hendrix+Rd,+Knoxville,+TN+379315&zoom=17&scale=1&size=450x350&maptype=satellite&sensor=false&format=png&visual_refresh=true
+Roof Size: 10976 meters squared
+
+Karns High School
+URL:  http://maps.googleapis.com/maps/api/staticmap?center=2700+Byington+Solway+Rd,+Knoxville,+TN+37931&zoom=16&scale=false&size=450x350&maptype=satellite&sensor=false&format=png&visual_refresh=true
+Roof Size: 11284 meters squared
+
+Powell High School
+URL: http://maps.googleapis.com/maps/api/staticmap?center=2136+W+W+Emory+Rd,+Powell,+TN+37849&zoom=17&scale=false&size=450x350&maptype=satellite&sensor=false&format=png&visual_refresh=true
+Roof Size: 8787 meters squared
+
+West Valley Middle School
+URL: http://maps.googleapis.com/maps/api/staticmap?center=9118+George+Williams+Rd,+Knoxville,+TN+37922&zoom=17&scale=false&size=450x350&maptype=satellite&sensor=false&format=png&visual_refresh=true
+Roof Size: 10180 meters squared

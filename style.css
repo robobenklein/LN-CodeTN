@@ -46,7 +46,8 @@ a {
 	padding:0px;
 	border-bottom:5px solid #A10000;
 	padding:7px;
-	height:120px; }
+	height:120px;
+	min-width:1000px;}
 
 .check {
 	position:relative;
@@ -98,8 +99,7 @@ a {
 	-webkit-border-radius: 3;
 	-moz-border-radius: 3;
 	border-radius: 3px;
-	font-family: Arial;
-	color: #ffffff;
+	color: #fff;
 	font-size: 15px;
 	background: #a10000;
 	padding: 8px 12px 8px 12px;
@@ -109,4 +109,20 @@ a {
 
 .red:hover {
 	background: #730000;
+	text-decoration: none; }
+
+.grey {
+	-webkit-border-radius: 3;
+	-moz-border-radius: 3;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 15px;
+	background: #939393;
+	padding: 8px 12px 8px 12px;
+	text-decoration: none;
+	margin:5px;
+	border:0px; }
+
+.grey:hover {
+	background: #616161;
 	text-decoration: none; }

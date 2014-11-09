@@ -4,6 +4,7 @@
   <title>CodeTN Project - Step 1</title>
   <link rel="stylesheet" href="style.css">
   <script language="javascript" type="text/javascript" src="scroll.js"></script>
+  <script language="javascript" type="text/javascript" src="jquery-2.1.1.min.js"></script>
 </head>
 
 <!--
@@ -40,9 +41,9 @@ Beginning of the main, clickable content.
 <div class="main">
 	<div class="wrapper">
 		
-		<div style="clear:both;" class="input_main">Welcome to the LNSTEM Solar Panel Feasibility calculator! To begin
-		calculating if solar energy is a good choice for your school, select your school from the drop down list, then click next.
-		If you need help, tap/hover the star on the right side of the respective input box.</div>
+		<div style="clear:both; font-weight:bold;" class="input_main">Welcome to the LNSTEM Solar Panel Feasibility calculator! To begin
+		calculating if solar energy is a good choice for your school, select your school from the drop down list, then click continue.
+		If you need help, click the help box in the bottom left hand corner.</div>
 		
 		
 		<div class="leftmain" style="text-align:center;">
@@ -57,15 +58,15 @@ Beginning of the main, clickable content.
 			<option value="Powell">Powell High School</option>
 			<option value="WestValley">West Valley Middle School</option>
 		</select><br>
-				
+		This roof is<br><span style="font-size:150px; font-weight:bold;">x<sup>2</sup></span><br> meters in area.<br><!-- This is where we need to list the size of the roof top in meters, Ben -->
 		</div> <!-- end of left main -->
 	
 		<div class="rightmain">
 		<img src="https://maps.googleapis.com/maps/api/staticmap?center=401+henley+street,knoxville,tn=10&size=450x350" height="350" width="450" alt="This is the map for L&N STEM Academy.">
-		You could fit <b>x</b> panels on this campus.<br>
+		
 		</div> <!-- end of right main -->
 		
-		<div id="buttons"><button class="red left">Help</button><button class="red right">Continue</button></div>
+		<div id="buttons"><a class="red left" href="#">Help</a><a class="red right" href="step2.htm">Continue</a></div>
 	</div> <!-- end of wrapper class -->
 </div> <!-- end of main -->
 <!--
