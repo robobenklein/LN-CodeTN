@@ -36,11 +36,11 @@ var height = parseFloat(getCookie("height"));
 var budget = parseInt(getCookie("budget"));
 var install = parseInt(getCookie("install"));
 var payoff = parseFloat(getCookie("payoff"));
-var efficiency = parseFloat(getCookie("efficiency"));
+//var efficiency = parseFloat(getCookie("efficiency"));
 var school = getCookie("school");
 
 // Calculating how many panels can fit on the roof, This is correct, do not change.
-var panelsNeeded = Math.trunc( (getRoofSize(school) * 0.85) / ((width * 0.0254) * (height * 0.0254)) );
+var panelsNeeded = Math.trunc( (getRoofSize(school)) / ((width * 0.0254) * (height * 0.0254)) );
 
 // CORRECT
 var individualpanelwattsperyear = (365 * 5.67 * panelpower)
