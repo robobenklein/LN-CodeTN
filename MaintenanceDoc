@@ -1,0 +1,123 @@
+THIS FILE IS CURRENT AS OF 11:30 PM EST 11/9/2014.
+Uploaded as .txt file for convenience of access.
+
+*COMPLETE STEP3.HTM, HELP.HTM, AND CALC.JS AND NOTIFY ALEC BISSELL SO MAINTENANCE DOCUMENTATION CAN BE COMPLETED.*
+
+
+LNSTEM SOLAR CALCULATOR
+MAINTENANCE DOCUMENTATION
+1 GENERAL
+1.1 PURPOSE
+This manual provides information to those who have acquired the original LNSTEM Solar Calculator code and intend to implement or adapt the code for their uses.
+1.2 CONTACT INFORMATION
+s731875@student.knoxschools.org - Todd Allen, Project Lead and HTML Department Head
+s728034@student.knoxschools.org - Ben Klein, JavaScript Department Head
+afbissell@live.com - Alec Bissell, Documentation Department Head
+1.3 REFERENCES
+This code utilizes the Google Maps / Google Earth API. This API belongs to Google, Inc., and users must abide by the Terms of Service Agreement set forth by Google, Inc.
+This code also utilizes the JQuery library. The JQuery library is licensed by the JQuery Team for open-source use.
+2 TECHNICAL INFORMATION
+2.1 ORGANIZATION
+2.2.1 “INDEX.HTM”
+“index.htm” serves as the default landing page for the web tool.
+Under the head of the file:
+<link rel="stylesheet" href="style.css">
+LNSTEM Solar Calculator operates using an external CSS file. The above statement indicates that “index.htm” will utilize the classes defined within the file “style.css”. For details regarding “style.css”, see 2.2.4.
+<script language="javascript" type="text/javascript"
+src="scripts/scroll.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/jquery-2.1.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/main.js"></script>
+LNSTEM Solar Calculator operates using JavaScript file references. The above statements indicate that “index.htm” will utilize the JavaScript data and functions defined within the files “main.js” and “scroll.js”. For details regarding either of the aforementioned files, see 2.2.5 (for main) or 2.2.6 (for scroll).
+Under the body of the file:
+<div id="navbar">
+These statement refer to “style.css”. “navbar” is established as a unique ID and primary division. Below it, “wrapper” is established as a class, because it is used elsewhere in the document to set boundaries, margins, and alignments. Under the
+boundaries of class “wrapper”, images are aligned to both the left and right. Important to note is that in the case that these images are not present, an alternative option, specified by “alt=”, is defined as basic text.
+<div class="steps">
+This statement refers to “style.css”. “steps” is established as a class and primary division. Below it, “wrapper” is established as a class and sets boundaries margins, and alignments. Under the boundaries of class “wrapper”, images are aligned relative to their order according to class “check”. “Step 1” is highlighted in red, indicating the user’s progress. Important to note is that in the case that these images are not present, an alternative option, specified by “alt=”, is defined as basic text.
+<div class="main">
+Calculation results performed in “calc.js” are displayed here, as well as a green yes or red no indicating whether solar energy is feasible for the given location.
+Lastly, division class button left places classes “red left” and “red right”, linking to “help.htm” and “step2.htm” respectively.
+Under the footer of the file:
+A footer is established with division class “wrapper”.
+2.2.2 “STEP2.HTM”
+“step2.htm” serves as user input page for the web tool.
+Under the head of the file:
+<link rel="stylesheet" href="style.css">
+LNSTEM Solar Calculator operates using an external CSS file. The above statement indicates that “index.htm” will utilize the classes defined within the file “style.css”. For details regarding “style.css”, see 2.2.4.
+<script language="javascript" type="text/javascript"
+src="scripts/scroll.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/jquery-2.1.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/main.js"></script>
+LNSTEM Solar Calculator operates using JavaScript file references. The above statements indicate that “index.htm” will utilize the JavaScript data and functions defined within the files “main.js” and “scroll.js”. For details regarding either of the aforementioned files, see 2.2.5 (for main) or 2.2.7 (for scroll).
+Under the body of the file:
+<div id="navbar">
+These statement refer to “style.css”. “navbar” is established as a class and primary division. Below it, “wrapper” is established as a class, because it is used elsewhere in the document to set boundaries, margins, and alignments. Under the boundaries of class “wrapper”, images are aligned to both the left and right. Important to note is that in the case that these images are not present, an alternative option, specified by “alt=”, is defined as basic text.
+<div class="steps">
+This statement refers to “style.css”. “steps” is established as a class and primary division. Below it, “wrapper” is established as a class and sets boundaries
+margins, and alignments. Under the boundaries of class “wrapper”, images are aligned relative to their order according to class “check”. “Step 2” is highlighted in red, indicating the user’s progress. Important to note is that in the case that these images are not present, an alternative option, specified by “alt=”, is defined as basic text.
+<div class="main">
+This statement refers to “style.css”. “main” is established as a class and primary division. Below it, “wrapper” is established as a class and sets boundaries margins, and alignments. Under the boundaries of class “wrapper”, inputs of the class “input_main” are established, divided evenly between “leftmain” and rightmain”. These allow the user to input cookies (with an expiration time of 5 days) which are passed to “step3.htm” via the statement window.location.href = "step3.htm";.
+Lastly, division class button left places classes “grey left,” “red left” and “red right”, linking to “help.htm”, “index.htm”, and “step3.htm” respectively.
+Under the footer of the file:
+A footer is established with division class “wrapper”.
+2.2.3 “STEP3.HTM”
+“step3.htm” serves as the result display page for the web tool.
+Under the head of the file:
+<link rel="stylesheet" href="style.css">
+LNSTEM Solar Calculator operates using an external CSS file. The above statement indicates that “index.htm” will utilize the classes defined within the file “style.css”. For details regarding “style.css”, see 2.2.4.
+<script language="javascript" type="text/javascript"
+src="scripts/scroll.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/jquery-2.1.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/main.js"></script>
+LNSTEM Solar Calculator operates using JavaScript file references. The above statements indicate that “index.htm” will utilize the JavaScript data and functions defined within the files “main.js” and “scroll.js”. For details regarding either of the aforementioned files, see 2.2.5 (for main) or 2.2.7 (for scroll).
+Under the body of the file:
+<div id="navbar">
+These statement refer to “style.css”. “navbar” is established as a class and primary division. Below it, “wrapper” is established as a class, because it is used elsewhere in the document to set boundaries, margins, and alignments. Under the boundaries of class “wrapper”, images are aligned to both the left and right. Important to note is that in the case that these images are not present, an alternative option, specified by “alt=”, is defined as basic text.
+<div class="steps">
+This statement refers to “style.css”. “steps” is established as a class and primary division. Below it, “wrapper” is established as a class and sets boundaries margins, and alignments. Under the boundaries of class “wrapper”, images are
+aligned relative to their order according to class “check”. “Step 3” is highlighted in red, indicating the user’s progress. Important to note is that in the case that these images are not present, an alternative option, specified by “alt=”, is defined as basic text.
+<div class="main">
+*AWAITING COMPLETION*
+Lastly, division class "button" left places classes “grey left,” “red left” and “red right”, linking to “help.htm”, “step2.htm”, and “index.htm” respectively.
+Under the footer of the file:
+A footer is established with division class “wrapper”.
+2.2.4 “STYLE.CSS”
+“style.css” is an external style sheet, meaning that it is referenced by multiple .htm files and must be included with those files on the webserver. “style.css” defines several classes, indicated by a “.” prefix, and one ID, “#navbar”.
+Three colors are used in the tool. A main red, #A10000, a dark red, #730000, and a deactivation grey, #939393.
+Common elements, including a white body background, are first defined.
+Applications of each class or ID are as follows:
+“.left” – aligns images to the left.
+“.right” – aligns images to the right.
+“.wrapper” – sets boundaries for webpage content at a maximum width of 1000.
+“.steps” – frames user progress display.
+“.check” – aligns check boxes for user progress.
+“.main” – establishes the division for the main content of the page.
+“.leftmain” – aligns content left within the division .main
+“.rightmain” – aligns content tight within the division .main
+“#navbar” – sits in the header, displays title.
+“.input_main” – allows for user input.
+“.input_main:focus” – highlights the box when the user selects it.
+“.help” – assigns text style for help page.
+“.red”- establishes a red button
+“.red:hover” – changes from main red to dark red on hover.
+“.grey”- establishes a grey button
+“.red:hover” – changes from a light grey to dark grey on hover.
+2.2.5 “MAIN.JS”
+Functions “getCookie” and “setCookie” set data for use by other JavaScript files.
+Function “getRoofSize” returns a roof area value for the user-selected school.
+Function “getSchoolURL” returns the URL of the GoogleMaps API image of the school’s location.
+2.2.6 “CALC.JS”
+*AWAITING COMPLETION*
+2.2.7 “SCROLL.JS”
+“scroll.js” establishes a function which allows information to disappear should the user scroll to the top of the webpage.
+2.2.8 “HELP.HTM”
+“help.htm” includes headers and footers identical to “index.htm”, “step2.htm”, and “step3.htm”. Within the body, a user FAQ and a hyperlink to this maintenance guide are provided as text.
+3 MODIFICATIONS
+Change #navbar lettering:
+Upload new .png files to your website, and change the references in “index.htm”, “step2.htm”, and “step3.htm”.
+Change colors:
+Replace a color reference in “style.css” with another hex color ID.
+Change language:
+Translate text found within the document to the desired language, and replace displayed fields of text with the translated text.
+Change location / add new location:
+Unfortunately, too many variables exist to properly display the relationship between location and average viable hours of daylight for solar power generation in a mathematical function. Furthermore, no public database exists giving average sunlight estimates for a large number of locations. If you are located within the United States, http://www.nrel.gov/gis/images/map_pv_national_hi-res_200.jpg exists providing estimated hours of average viable daylight for solar power generation. Once a value has been acquired, one can replace the value for Knoxville, Tennessee (4.64) with the desired new value. Regarding the square footage of one’s location, that also must be determined. Once it has, using a GIS feature, such as http://www.kgis.org/portal/, or manual measurement, “main.js” can be edited to include an “if” statement checking the name of the location and return of the square footage of the location. The Google Maps location can also be added changed again by adding “if” statements checking the name of the location and a return statement returning the URL of a Google Map centered on the location. In order to access this location with the web tool, make sure to add the location as an option in the drop-down box in the same format as other default options.
