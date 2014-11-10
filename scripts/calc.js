@@ -29,7 +29,7 @@ panels needed:
         output is number of panels that can be purchased
 */
 
-var panelpower = getCookie("panelpower");
+var panelpower = parseFloat(getCookie("panelpower"));
 var kwh = parseFloat(getCookie("kwh"));
 var width = parseFloat(getCookie("width"));
 var height = parseFloat(getCookie("height"));
