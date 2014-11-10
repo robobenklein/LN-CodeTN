@@ -33,13 +33,13 @@ var panelpower = parseFloat(getCookie("panelpower"));
 var kwh = parseFloat(getCookie("kwh"));
 var width = parseFloat(getCookie("width"));
 var height = parseFloat(getCookie("height"));
-var budget = parseFloat(getCookie("budget"));
-var install = parseFloat(getCookie("install"));
+var budget = parseInt(getCookie("budget"));
+var install = parseInt(getCookie("install"));
 var payoff = parseFloat(getCookie("payoff"));
 var efficiency = parseFloat(getCookie("efficiency"));
 var school = getCookie("school");
 
-var panelsNeeded = (getRoofSize(school) * 0.85) / ((width * height) * 0.00064516);
+var panelsNeeded = Math.trunc((getRoofSize(school) * 0.85) / ((width * height) * 0.00064516));
 
 var panelpowerperyear = (365 * 4.64 * panelpower);
 
@@ -47,9 +47,9 @@ var panelkwhperyear = (panelpowerperyear * 0.001);
 
 var paneloutputfinal = (panelkwhperyear * panelsNeeded);
 
-var payofftime = (budget + install) / (paneloutputfinal);
+var payofftime = (budget + install) / (paneloutputfinal * kwh);
 
-var moneysaved10years = ((paneloutputfinal * 10 * kwh) - budget - install);
+var moneysaved10years = ((paneloutputfinal * 10 * kwh) - (budget + install);
 
 var moneyspent = budget + install;
 
