@@ -57,3 +57,6 @@ function getSchoolURL(school) {
         return "http://maps.googleapis.com/maps/api/staticmap?center=9118+George+Williams+Rd,+Knoxville,+TN+37922&zoom=17&scale=false&size=450x350&maptype=satellite&sensor=false&format=png&visual_refresh=true";
     }
 }
+function getMonthsToPayoff() {
+    
+}
