@@ -39,7 +39,7 @@ var payoff = getCookie("payoff");
 var efficiency = getCookie("efficiency");
 var school = getCookie("school");
 
-var panelsNeeded = Math.trunc((getRoofSize(school) * 0.85) / (width * height));
+var panelsNeeded = Math.trunc((getRoofSize(school) * 0.85) / ((width * height)) * 0.00064516);
 
 var panelpowerperyear = (365 * 4.64 * panelpower);
 
