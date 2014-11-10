@@ -26,9 +26,9 @@ Beginning of the step status bar code.
 -->
 <div class="steps">
         <div class="wrapper">
-        <img src="pictures/CheckmarkS1High.png" class="check" alt="Step 1" height="167" height="100">
-        <img src="pictures/CheckmarkS2.png" class="check" alt="Step 2" height="167" height="100">
-        <img src="pictures/CheckmarkS3.png" class="check" alt="Step 3" height="167" height="100">
+        <img src="pictures/CheckmarkS1High.png" class="check" alt="Step 1" width="167" height="100">
+        <img src="pictures/CheckmarkS2.png" class="check" alt="Step 2" width="167" height="100">
+        <img src="pictures/CheckmarkS3.png" class="check" alt="Step 3" width="167" height="100">
         </div><!-- End wrapper -->
 </div><!-- End steps -->
 <!--
@@ -48,7 +48,7 @@ Beginning of the main, clickable content.
                 <script type="text/javascript"><!-- Ooh, yeah! You like dis script' eh? Well I've got more for you ;) -->
                 function showRoofSize(school) {
                         // Don't mind me taking pre-defined values from our main.js script
-                        document.getElementById("roofSize").innerHTML = getRoofSize(school) + "<sup>2</sup>";
+                        document.getElementById("roofSize").innerHTML = getRoofSize(school);
                         document.getElementById("googlemap").innerHTML = "<img src=\"" + getSchoolURL(school) + "\" height=\"350\" width=\"450\" alt=\"This is the Google Map for the selected School.\">";
                         // Keep our cookie up to date (Stale cookies taste terrible.)
                         setCookie("school", school, 5);
