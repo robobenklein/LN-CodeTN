@@ -47,7 +47,7 @@ var paneloutputfinal = (panelkwhperyear * efficiency);
 
 var panelsNeeded = Math.trunc((getRoofSize(school) * 0.85) / (width * height));
 
-var payoffTime = (budget + install) / (paneloutputfinal * kwh);
+var payofftime = (budget + install) / (paneloutputfinal * kwh);
 
 var moneysaved10years = ((paneloutputfinal * 10 * kwh) - budget - install);
 
