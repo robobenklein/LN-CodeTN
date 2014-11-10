@@ -51,7 +51,7 @@ var payofftime = (budget + install) / (paneloutputfinal * kwh);
 
 var moneysaved10years = ((paneloutputfinal * 10 * kwh) - budget - install);
 
-var moneyspent = budget + install;
+var moneyspent = parseInt(budget) + parseInt(install);
 
 if (payofftime <= payoff) {
         var goodinvestment = true;
