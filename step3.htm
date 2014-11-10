@@ -68,8 +68,13 @@ Beginning of the main, clickable content.
                 </div> <!-- end of left main -->
         
                 <div id="yesno" class="rightmain" style="text-align:center;">
-                <span style="color:#069800; font-size:80px;">Yes!</span>
-                <span style="color:#A10000; font-size:80px;">No<span>
+                <script type="text/javascript">
+                if (goodinvestment == true) {
+                        document.write("<span style=\"color:#069800; font-size:80px;\">Yes!</span>");
+                } else {
+                        document.write("<span style=\"color:#A10000; font-size:80px;\">No<span>");
+                }
+                </script>
                 </div> <!-- end of right main -->
                 
                 <div class="buttons"><a class="grey left" href="help.htm">Help</a><a class="red left" href="step2.htm">Back</a></div>
