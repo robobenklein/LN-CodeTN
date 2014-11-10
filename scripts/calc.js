@@ -47,7 +47,7 @@ var panelkwhperyear = (panelpowerperyear * 0.001);
 
 var paneloutputfinal = (panelkwhperyear * efficiency * panelsNeeded);
 
-var payofftime = (budget + install) / (paneloutputfinal * kwh);
+var payofftime = (budget + install) / (paneloutputfinal);
 
 var moneysaved10years = ((paneloutputfinal * 10 * kwh) - budget - install);
 
