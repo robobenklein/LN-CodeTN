@@ -39,13 +39,13 @@ var payoff = parseFloat(getCookie("payoff"));
 var efficiency = parseFloat(getCookie("efficiency"));
 var school = getCookie("school");
 
-var panelsNeeded = Math.trunc((getRoofSize(school) * 0.85) / ((width * height) * 0.00064516));
-
+var panelsNeeded = Math.trunc((getRoofSize(school) * 0.85)) / ((width * height) * 0.00064516));
+//var panelsNeeded = Math.trunc((getRoofSize(school) * 0.85))
 var panelpowerperyear = (365 * 4.64 * (panelpower * 0.001));
 
 var panelkwhperyear = (panelpowerperyear);
 
-var paneloutputfinal = (panelkwhperyear * efficiency * panelsNeeded);
+var paneloutputfinal = (panelkwhperyear * panelsNeeded);
 
 var payofftime = (budget + install) / (paneloutputfinal);
 
