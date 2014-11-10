@@ -48,10 +48,10 @@ Beginning of the main, clickable content.
                 function Finish() {
                         // Set all our cookies and GTFO
                         setCookie("kwh", document.getElementById("kwh").value, 5);
-                        setCookie("panelcount", document.getElementById("panelcount").value, 5);
+                        setCookie("width", document.getElementById("width").value, 5);
+                        setCookie("height", document.getElementById("height").value, 5);
                         setCookie("budget", document.getElementById("budget").value, 5);
                         setCookie("install", document.getElementById("install").value, 5);
-                        setCookie("payoff", document.getElementById("payoff").value, 5);
                         // Kbai (next step)
                         window.location.href = "/step3.htm";
                 }
@@ -61,27 +61,28 @@ Beginning of the main, clickable content.
                 <div class="leftmain">          
                 
                 Cost per kilowatt hour of electricity:<br>
-                <input class="input_main" type="text" id="kwh" placeholder="0.00" tabindex="1" required><br>
+                <input class="input_main" type="number" id="kwh" placeholder="0.00" tabindex="1" required><br>
                 Width of one panel (in inches):<br>
-                <input class="input_main" type="text" id="width" placeholder="36" tabindex="2" required><br>
-				Height of one panel (in inches):<br>
-				<input class="input_mainu" type="text" id="height" placeholder="48" tabindex="3" required><br>
+                <input class="input_main" type="number" id="width" placeholder="36" tabindex="2" required><br>
+                Height of one panel (in inches):<br>
+                <input class="input_mainu" type="number" id="height" placeholder="48" tabindex="3" required><br>
                 Budget for panels (in dollars):<br>
-                <input class="input_main" type="text" id="budget" placeholder="10,000" tabindex="4" required><br>
-                Installation Costs (in dollars):<br>
-                <input class="input_main" type="text" id="install" placeholder="3,000" tabindex="5" required><br>
+                <input class="input_main" type="number" id="budget" placeholder="10,000" tabindex="4" required><br>
                 
                 </div> <!-- end of left main -->
         
                 <div class="rightmain">
                 
+                Installation Cost (in dollars):<br>
+                <input class="input_main" type="number" id="install" placeholder="3,000" tabindex="5" required><br>
                 Desired payoff time in months:<br>
-                <input class="input_main" type="text" id="payoff" placeholder="12" tabindex="6" required><br>
+                <input class="input_main" type="number" id="payoff" placeholder="12" tabindex="6" required><br>
                 Percent efficiency of the panels at peak:
-				<input class="input_main" type="text" id="efficiency" placeholder="0.78" tabindex="7" required><br>
-				Power produced per panel in kw/h:
-				<input class="input_main" type="text" id="panelpower" placeholder="10" tabindex="8" required><br>
-				</div> <!-- end of right main -->
+                <input class="input_main" type="number" id="efficiency" placeholder="0.78" tabindex="7" required><br>
+                Power produced per panel in kw/h:
+                <input class="input_main" type="number" id="panelpower" placeholder="10" tabindex="8" required><br>
+                
+                </div> <!-- end of right main -->
                 
                 <div class="buttons"><a class="grey left" href="help.htm">Help</a><a class="red left" href="index.htm">Back</a><a class="red right" onclick="Finish()">Finish</a></div>
         </div> <!-- end of wrapper class -->
