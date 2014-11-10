@@ -62,20 +62,26 @@ Beginning of the main, clickable content.
                 
                 Cost per kilowatt hour of electricity:<br>
                 <input class="input_main" type="text" id="kwh" placeholder="0.00" tabindex="1" required><br>
-                Number of panels desired:<br>
-                <input class="input_main" type="text" id="panelcount" placeholder="5" tabindex="2" required><br>
-                Budget (in dollars):<br>
-                <input class="input_main" type="text" id="budget" placeholder="10,000" tabindex="3" required><br>
-                
+                Width of one panel (in inches):<br>
+                <input class="input_main" type="text" id="width" placeholder="36" tabindex="2" required><br>
+				Height of one panel (in inches):<br>
+				<input class="input_mainu" type="text" id="height" placeholder="48" tabindex="3" required><br>
+                Budget for panels (in dollars):<br>
+                <input class="input_main" type="text" id="budget" placeholder="10,000" tabindex="4" required><br>
+                Installation Costs (in dollars):<br>
+                <input class="input_main" type="text" id="install" placeholder="3,000" tabindex="5" required><br>
                 
                 </div> <!-- end of left main -->
         
                 <div class="rightmain">
-                Installation Costs (in dollars):<br>
-                <input class="input_main" type="text" id="install" placeholder="3,000" tabindex="4" required><br>
+                
                 Desired payoff time in months:<br>
-                <input class="input_main" type="text" id="payoff" placeholder="12" tabindex="5" required><br>
-                </div> <!-- end of right main -->
+                <input class="input_main" type="text" id="payoff" placeholder="12" tabindex="6" required><br>
+                Percent efficiency of the panels at peak:
+				<input class="input_main" type="text" id="efficiency" placeholder="0.78" tabindex="7" required><br>
+				Power produced per panel in kw/h:
+				<input class="input_main" type="text" id="panelpower" placeholder="10" tabindex="8" required><br>
+				</div> <!-- end of right main -->
                 
                 <div class="buttons"><a class="grey left" href="help.htm">Help</a><a class="red left" href="index.htm">Back</a><a class="red right" onclick="Finish()">Finish</a></div>
         </div> <!-- end of wrapper class -->
