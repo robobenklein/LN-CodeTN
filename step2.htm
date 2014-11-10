@@ -46,11 +46,13 @@ Beginning of the main, clickable content.
                 
                 <script type="text/javascript">
                 function Finish() {
+                        // Set all our cookies and GTFO
                         setCookie("kwh", document.getElementById("kwh").value, 5);
                         setCookie("panelcount", document.getElementById("panelcount").value, 5);
                         setCookie("budget", document.getElementById("budget").value, 5);
                         setCookie("install", document.getElementById("install").value, 5);
                         setCookie("payoff", document.getElementById("payoff").value, 5);
+                        // Kbai (next step)
                         window.location.href = "/step3.htm";
                 }
                 </script>
