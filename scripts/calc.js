@@ -1,14 +1,4 @@
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0; i<ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1);
-        if (c.indexOf(name) != -1) {
-            return c.substring(name.length, c.length);
-        }
-    }
-}
+
 /*
 calculations:
 ====================
@@ -49,10 +39,22 @@ var payoff = getCookie("payoff");
 var efficiency = getCookie("efficiency");
 var school = getCookie("school");
 
-function getPanelsNeeded() {
-        return 
-}
+var panelpowerperyear = (365 * 4.64 * panelpower);
 
-function getPayoffTime() {
-        
+var panelkwhperyear = (panelpowerperyear * 0.001);
+
+var paneloutputfinal = (panelkwhperyear * efficiency);
+
+var panelsNeeded = Math.trunc((getRoofSize(school) * 0.85) / (width * height));
+
+var payoffTime = (budget + install) / (paneloutputfinal * kwh);
+
+var moneysaved10years = ((paneloutputfinal * 10 * kwh) - budget - install);
+
+var moneyspent = budget + install;
+
+if (payofftime <= payoff) {
+        var goodinvestment = true;
+} else {
+        var goodinvestment = false;
 }
