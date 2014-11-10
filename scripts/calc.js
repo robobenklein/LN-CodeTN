@@ -30,13 +30,13 @@ panels needed:
 */
 
 var panelpower = getCookie("panelpower");
-var kwh = getCookie("kwh");
-var width = getCookie("width");
-var height = getCookie("height");
-var budget = getCookie("budget");
-var install = getCookie("install");
-var payoff = getCookie("payoff");
-var efficiency = getCookie("efficiency");
+var kwh = parseFloat(getCookie("kwh"));
+var width = parseFloat(getCookie("width"));
+var height = parseFloat(getCookie("height"));
+var budget = parseFloat(getCookie("budget"));
+var install = parseFloat(getCookie("install"));
+var payoff = parseFloat(getCookie("payoff"));
+var efficiency = parseFloat(getCookie("efficiency"));
 var school = getCookie("school");
 
 var panelsNeeded = Math.trunc((getRoofSize(school) * 0.85) / ((width * height)) * 0.00064516);
@@ -51,7 +51,7 @@ var payofftime = (budget + install) / (paneloutputfinal * kwh);
 
 var moneysaved10years = ((paneloutputfinal * 10 * kwh) - budget - install);
 
-var moneyspent = parseInt(budget) + parseInt(install);
+var moneyspent = budget + install;
 
 if (payofftime <= payoff) {
         var goodinvestment = true;
