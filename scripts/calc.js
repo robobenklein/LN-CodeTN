@@ -30,7 +30,7 @@ panels needed:
 */
 
 var panelpower = parseFloat(getCookie("panelpower"));
-var kwh = parseFloat(getCookie("kwh"));
+var kwhcost = parseFloat(getCookie("kwh"));
 var width = parseFloat(getCookie("width"));
 var height = parseFloat(getCookie("height"));
 var budget = parseInt(getCookie("budget"));
@@ -39,21 +39,28 @@ var payoff = parseFloat(getCookie("payoff"));
 var efficiency = parseFloat(getCookie("efficiency"));
 var school = getCookie("school");
 
-var panelsNeeded = Math.trunc((getRoofSize(school) * 0.85) / ((width * height) * 0.00064516));
+// Calculating how many panels can fit on the roof, This is correct, do not change.
+var panelsNeeded = Math.trunc( (getRoofSize(school) * 0.85) / ((width * 0.0254) * (height * 0.0254)) );
 
-var panelpowerperyear = (365 * 4.64 * panelpower);
+// CORRECT
+var individualpanelwattsperyear = (365 * 4.64 * panelpower)
+//var panelpowerperyear = (365 * 4.64 * panelpower);
 
-var panelkwhperyear = (panelpowerperyear * 0.001);
+// CORRECT
+var individualpanelkwhperyear = (individualpanelwattsperyear * 0.001);
 
-var paneloutputfinal = (panelkwhperyear * panelsNeeded);
+// CORRECT
+var allpanelsoutputfinalperyear = (individualpanelkwhperyear * panelsNeeded);
 
-var payofftime = (budget + install) / (paneloutputfinal * kwh);
+// CORRECT
+var payofftimeinyears = (budget + install) / (allpanelsoutputfinalperyear * kwhcost);
 
-var moneysaved10years = (paneloutputfinal * 10 * kwh) - (budget + install);
+// CORRETC
+var moneysaved10years = (((allpanelsoutputfinalperyear * kwhcost) - (budget + install)) * 10);
 
 var moneyspent = budget + install;
 
-if (payofftime <= payoff) {
+if (payofftimeinyears <= (payoff / 12)) {
         var goodinvestment = true;
 } else {
         var goodinvestment = false;
