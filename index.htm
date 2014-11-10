@@ -48,7 +48,7 @@ Beginning of the main, clickable content.
                 <script type="text/javascript"><!-- Ooh, yeah! You like dis script' eh? Well I've got more for you ;) -->
                 function showRoofSize(school) {
                         // Don't mind me taking pre-defined values from our main.js script
-                        document.getElementById("roofSize").innerHTML = getRoofSize(school) + "<sup>2</sup>";
+                        document.getElementById("roofSize").innerHTML = getRoofSize(school);
                         document.getElementById("googlemap").innerHTML = "<img src=\"" + getSchoolURL(school) + "\" height=\"350\" width=\"450\" alt=\"This is the Google Map for the selected School.\">";
                         // Keep our cookie up to date (Stale cookies taste terrible.)
                         setCookie("school", school, 5);
