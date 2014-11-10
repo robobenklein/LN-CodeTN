@@ -43,7 +43,7 @@ var school = getCookie("school");
 var panelsNeeded = Math.trunc( (getRoofSize(school) * 0.85) / ((width * 0.0254) * (height * 0.0254)) );
 
 // CORRECT
-var individualpanelwattsperyear = (365 * 4.64 * panelpower)
+var individualpanelwattsperyear = (365 * 5.67 * panelpower)
 //var panelpowerperyear = (365 * 4.64 * panelpower);
 
 // CORRECT
