@@ -73,7 +73,9 @@ a {
 	background-color:#F9F9F9;
 	padding:15px;
 	height:100%;
-	margin-bottom:40px;}
+	margin-bottom:80px;
+	min-width:1000px;
+}
 	
 .leftmain {
 	margin-left:auto;
@@ -103,26 +105,26 @@ a {
 	margin-bottom:15px;
 	padding:6px;
 	border: 1px solid #c4c4c4;
-    font-size: 16px;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9; }
+	font-size: 16px;
+    	border-radius: 4px;
+	-moz-border-radius: 4px;
+    	-webkit-border-radius: 4px;
+    	box-shadow: 0px 0px 8px #d9d9d9;
+    	-moz-box-shadow: 0px 0px 8px #d9d9d9;
+    	-webkit-box-shadow: 0px 0px 8px #d9d9d9; }
 	
 .input_main {
 	margin-top:3px;
 	margin-bottom:15px;
 	border: 1px solid #c4c4c4;
-    font-size: 16px;
-    padding: 4px;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9; }
+    	font-size: 16px;
+    	padding: 4px;
+	border-radius: 4px;
+    	-moz-border-radius: 4px;
+    	-webkit-border-radius: 4px;
+    	box-shadow: 0px 0px 8px #d9d9d9;
+    	-moz-box-shadow: 0px 0px 8px #d9d9d9;
+    	-webkit-box-shadow: 0px 0px 8px #d9d9d9; }
 
 .input_main:focus { 
     outline: none;
