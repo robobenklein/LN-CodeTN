@@ -72,7 +72,8 @@ a {
 .main {
 	background-color:#F9F9F9;
 	padding:15px;
-	height:100%; }
+	height:100%;
+	margin-bottom:40px;}
 	
 .leftmain {
 	margin-left:auto;
