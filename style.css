@@ -1,16 +1,16 @@
 /*****************************************************
 * This code is owned by team LNSTEM at the L&N STEM  *
 * Academy in Knoxville, Tennessee. If you would like *
-* to inquire more about this code, please email:	 *
-* s731875@student.knoxschools.org and put "Solar 	 *
+* to inquire more about this code, please email:     *
+* s731875@student.knoxschools.org and put "Solar     *
 * Calculator" in the subject line. Please do not use *
-* any part of this code unless permission has been 	 *
-* specifically given.								 *
+* any part of this code unless permission has been   *
+* specifically given.				     *
 *****************************************************/
 /*****************************************************
-* Main red color is #A10000							 *
-* Dark red color is #730000						  	 *
-* Deactivated grey color is #939393					 *
+* Main red color is #A10000			     *
+* Dark red color is #730000			     *
+* Deactivated grey color is #939393		     *
 *****************************************************/
 
 
@@ -46,8 +46,8 @@ a {
 
 /*****************************************************
 * Styling boxes, setting up their sizes, adding some *
-* color, creating a sufficient padding, and adding	 *
-* positioning correctly on the page	 				 *
+* color, creating a sufficient padding, and adding   *
+* positioning correctly on the page	 	     *
 *****************************************************/
 .wrapper {
 	margin-left:auto;
@@ -143,7 +143,7 @@ a {
 	font-style:italic; }
 
 /*****************************************************
-* 					Button Classes!		   			 *
+* 	            Button Classes!		     *
 *****************************************************/
 
 .red {
