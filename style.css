@@ -139,7 +139,7 @@ a {
 	width:1000px;
 	position:fixed;
 	bottom:50px;
-	z-index:1;}
+	z-index:0; }
 
 .help {
 	font-weight:bold;
