@@ -40,8 +40,9 @@ var payoff = parseFloat(getCookie("payoff"));
 var school = getCookie("school");
 
 // Calculating how many panels can fit on the roof, This is correct, do not change.
-var panelsNeeded = Math.trunc( (getRoofSize(school)) / ((width * 0.0254) * (height * 0.0254)) );
+var panelsNeeded = (getRoofSize(school)) / ((width * height) * .00064516);
 //should be able to write instead as ((width * height) * .00064516) - Bissell
+//((width * 0.0254) * (height * 0.0254))
 // CORRECT
 var individualpanelwattsperyear = (365 * 5.67 * panelpower)
 //var panelpowerperyear = (365 * 4.64 * panelpower);
