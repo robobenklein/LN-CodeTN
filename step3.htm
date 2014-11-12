@@ -6,10 +6,7 @@
         <script language="javascript" type="text/javascript" src="scripts/main.js"></script>
         <script language="javascript" type="text/javascript" src="scripts/calc.js"></script>
 </head>
-
-<!--
-Beginning of the navigation bar code.
--->
+<!-- Beginning of the navigation bar code. -->
 <body>
 <div id="navbar">
         <div class="wrapper">
@@ -17,13 +14,8 @@ Beginning of the navigation bar code.
         <img src="pictures/solarcalculator.png" class="right" alt="Solar Calculator made by team LNSTEM.">
         </div><!-- End wrapper -->
 </div><!-- End navbar -->
-<!--
-End of the navigation bar code.
--->
-
-<!--
-Beginning of the step status bar code.
--->
+<!-- End of the navigation bar code. -->
+<!-- Beginning of the step status bar code. -->
 <div class="steps">
         <div class="wrapper">
         <img src="pictures/CheckmarkS1.png" class="check" alt="Step 1" width="278" height="167">
@@ -31,40 +23,21 @@ Beginning of the step status bar code.
         <img src="pictures/CheckmarkS3High.png" class="check" alt="Step 3" width="278" height="167">
         </div><!-- End wrapper -->
 </div><!-- End steps -->
-<!--
-End of the step status bar code.
--->
-
-<!--
-Beginning of the main, clickable content.
--->
+<!-- End of the step status bar code. -->
+<!-- Beginning of the main, clickable content. -->
 <div class="main">
         <div class="wrapper">
-                
                 <div class="information">After crunching some numbers, here is what we found:</div>
-                
-                <script type="text/javascript">
-                // NEED SOMETHING HERE
-                </script>
-                
                 <div class="leftmain">          
-                <!--
-                Solar energy is/is not a feasible choice for your school!<br><br>
-                If no:
-                Try increasing your budget, or consider buying panels that produce more kilowatt hours of electricity.
-                <br><br>
-                If yes:
-                You can now present this information to whoever needs it, and request a grant!<br><br>
-                -->
-                Energy produced in one year: <b><!--<script type="text/javascript">document.write(Math.round(paneloutputfinal * 100) / 100);</script>--><script type="text/javascript">document.write(allpanelsoutputfinalperyear);</script></b> kw/h.<br>
+                <!-- Give the User all the feedback they desire. -->
+                Energy produced in one year: <b><script type="text/javascript">document.write(allpanelsoutputfinalperyear);</script></b> kw/h.<br>
                 Pay-off time for initial investment: <b><script type="text/javascript">document.write(Math.round(payofftimeinyears * 100) / 100);</script></b> years.<br>
                 Savings in ten years: $<b><script type="text/javascript">document.write(Math.round(moneysaved10years * 100) / 100);</script></b>.<br>
                                 Total money spent: $<b><script type="text/javascript">document.write(moneyspent);</script></b>.<br>
                                 Panels needed for your roof: <b><script type="text/javascript">document.write(panelsNeeded);</script></b>.<br><br>
                 Thank you for using our calculator! If you would like to start over, click <a href="index.html"><b>here</b></a>.
-
-                </div> <!-- end of left main -->
-        
+                </div> <!-- That's all the info we'll present. -->
+                <!-- Tell them in simple terms, is this a good investment? -->
                 <div id="yesno" class="rightmain" style="text-align:center;">
                 <script type="text/javascript">
                 if (goodinvestment == true) {
@@ -73,21 +46,16 @@ Beginning of the main, clickable content.
                         document.write("<span style=\"color:#A10000; font-size:80px;\">No<span>");
                 }
                 </script>
-                </div> <!-- end of right main -->
-                
+                </div> <!-- Right main done. -->
                 <div class="buttons"><a class="grey left" href="help.htm">Help</a><a class="red left" href="step2.htm">Back</a></div>
         </div> <!-- end of wrapper class -->
 </div> <!-- end of main -->
-<!--
-End of the main, clickable content.
--->
-
-
+<!-- End of the main, clickable content. -->
+<!-- All done, display our footer. -->
 <footer>
         <div class="wrapper">
         Copyright &copy; 2014 L&N STEM Academy. All rights reserved.
-        </div><!-- end of wrapper -->
-</footer><!-- end of footer -->
-
+        </div>
+</footer><!-- End of footer -->
 </body>
 </html>
