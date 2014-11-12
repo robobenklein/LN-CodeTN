@@ -1,15 +1,20 @@
 LN-CodeTN
 =========
 
-Our CodeTN Competition code.
+Hi! Welcome to L&N STEM's CodeTN Project Repository!
 
-For our Javascript team, check out this site: http://www.w3schools.com/js/js_intro.asp
-You'll be able to edit javascript in real time next to the visual result.
+All of our code is open source, under GPLv3.
 
-For our HTML team, watch this repository hourly so you can see the changes.  The code will be moving fast here.
+You can view the site at http://robobenklein.github.io/LN-CodeTN/
 
-For our documentation team, watch the code a lot on 11/9/2014, as the UI is being made and the code debugged.
+If you have any Problems, Suggestions, or Concerns, please feel free to create an Issue.
 
-Good luck team!
-
-http://robobenklein.github.io/LN-CodeTN/
+Our team:
+---------
+Javascript: Ben Klein
+HTML: Todd Allen
+CSS: Todd Allen
+Maintainer Documentation: Alec Bissel
+User Documentation & Help: Michael Buckley-Durst
+Testers: TaylorAmos, MelodyMor, s050720, JessicaMotto
+Code Review & Debuggers: Michael Glass, Isaiah Howell
