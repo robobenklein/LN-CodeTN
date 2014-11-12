@@ -1,15 +1,11 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
-        <title>CodeTN Project - Step 2</title>
+        <title>CodeTN Project - Step 1</title>
         <link rel="stylesheet" href="style.css">
         <script language="javascript" type="text/javascript" src="scripts/main.js"></script>
 </head>
-
-<!--
-Beginning of the navigation bar code.
--->
+<!-- Beginning of the navigation bar code. -->
 <body>
 <div id="navbar">
         <div class="wrapper">
@@ -17,13 +13,8 @@ Beginning of the navigation bar code.
         <img src="pictures/solarcalculator.png" class="right" alt="Solar Calculator made by team LNSTEM.">
         </div><!-- End wrapper -->
 </div><!-- End navbar -->
-<!--
-End of the navigation bar code.
--->
-
-<!--
-Beginning of the step status bar code.
--->
+<!-- End of the navigation bar code. -->
+<!-- Beginning of the step status bar code. -->
 <div class="steps">
         <div class="wrapper">
         <img src="pictures/CheckmarkS1.png" class="check" alt="Step 1" width="278" height="167">
@@ -31,18 +22,12 @@ Beginning of the step status bar code.
         <img src="pictures/CheckmarkS3.png" class="check" alt="Step 3" width="278" height="167">
         </div><!-- End wrapper -->
 </div><!-- End steps -->
-<!--
-End of the step status bar code.
--->
-
-<!--
-Beginning of the main, clickable content.
--->
+<!-- End of the step status bar code. -->
+<!-- Beginning of the main, clickable content. -->
 <div class="main">
         <div class="wrapper">
-                
                 <div class="information">Now that you have selected your school, fill in a few questions about your project.</div>
-                
+                <!-- Here's what happens when the user presses "Finish": -->
                 <script type="text/javascript">
                 function Finish() {
                         // Set all our cookies and GTFO
@@ -55,12 +40,9 @@ Beginning of the main, clickable content.
                         setCookie("panelpower", document.getElementById("panelpower").value, 5);
                         // Kbai (next step)
                         window.location.href = "step3.htm";
-                }
-                </script>
-                
-                
-                <div class="leftmain">          
-                
+                } </script>
+                <!-- Here's our form where you input the data about your project. -->
+                <div class="leftmain">
                 Cost per kilowatt hour of electricity in dollars:<br>
                 <input class="input_main" type="number" id="kwh" placeholder="0.13" tabindex="1" required><br>
                 Width of one panel in inches:<br>
@@ -69,33 +51,24 @@ Beginning of the main, clickable content.
                 <input class="input_main" type="number" id="height" placeholder="60" tabindex="3" required><br>
                 Percent of roof desired to be covered:<br>
                 <input class="input_main" type="number" id="roofsize" placeholder="75" tabindex="4" required><br>
-                
                 </div> <!-- end of left main -->
-        
                 <div class="rightmain">
-                
                 Installation cost in dollars:<br>
                 <input class="input_main" type="number" id="install" placeholder="3000000" tabindex="5" required><br>
                 Desired payoff time in months:<br>
                 <input class="input_main" type="number" id="payoff" placeholder="72" tabindex="6" required><br>
                 Power produced per panel in watts:<br>
                 <input class="input_main" type="number" id="panelpower" placeholder="265" tabindex="7" required><br>
-                
                 </div> <!-- end of right main -->
-                
-               <div class="buttons"><a class="grey left" href="help.htm">Help</a><a class="red left" href="index.html">Back</a><a class="red right" onclick="Finish()">Finish</a></div>
+        <div class="buttons"><a class="grey left" href="help.htm">Help</a><a class="red left" href="index.html">Back</a><a class="red right" onclick="Finish()">Finish</a></div>
         </div> <!-- end of wrapper class -->
 </div> <!-- end of main -->
-<!--
-End of the main, clickable content.
--->
-
-
+<!-- End of the main, clickable content. -->
+<!-- All done, display our footer. -->
 <footer>
         <div class="wrapper">
         Copyright &copy; 2014 L&N STEM Academy. All rights reserved.
-        </div><!-- end of wrapper -->
-</footer><!-- end of footer -->
-
+        </div>
+</footer><!-- End of footer -->
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -6,10 +5,7 @@
         <link rel="stylesheet" href="style.css">
         <script language="javascript" type="text/javascript" src="scripts/main.js"></script>
 </head>
-
-<!--
-Beginning of the navigation bar code.
--->
+<!-- Beginning of the navigation bar code. -->
 <body>
 <div id="navbar">
         <div class="wrapper">
@@ -17,13 +13,8 @@ Beginning of the navigation bar code.
         <img src="pictures/solarcalculator.png" class="right" alt="Solar Calculator made by team LNSTEM.">
         </div><!-- End wrapper -->
 </div><!-- End navbar -->
-<!--
-End of the navigation bar code.
--->
-
-<!--
-Beginning of the step status bar code.
--->
+<!-- End of the navigation bar code. -->
+<!-- Beginning of the step status bar code. -->
 <div class="steps">
         <div class="wrapper">
         <img src="pictures/CheckmarkS1High.png" class="check" alt="Step 1" width="278" height="167">
@@ -31,20 +22,13 @@ Beginning of the step status bar code.
         <img src="pictures/CheckmarkS3.png" class="check" alt="Step 3" width="278" height="167">
         </div><!-- End wrapper -->
 </div><!-- End steps -->
-<!--
-End of the step status bar code.
--->
-
-<!--
-Beginning of the main, clickable content.
--->
+<!-- End of the step status bar code. -->
+<!-- Beginning of the main, clickable content. -->
 <div class="main">
         <div class="wrapper">
-                
                 <div class="information">Welcome to the LNSTEM Solar Panel Feasibility calculator! To begin
                 calculating if solar energy is a good choice for your school, select your school from the drop down list, then click continue.
                 If you need help, click the help box in the bottom left hand corner.</div>
-                
                 <script type="text/javascript"><!-- Ooh, yeah! You like dis script' eh? Well I've got more for you ;) -->
                 function showRoofSize(school) {
                         // Don't mind me taking pre-defined values from our main.js script
@@ -52,9 +36,8 @@ Beginning of the main, clickable content.
                         document.getElementById("googlemap").innerHTML = "<img src=\"" + getSchoolURL(school) + "\" height=\"350\" width=\"450\" alt=\"This is the Google Map for the selected School.\">";
                         // Keep our cookie up to date (Stale cookies taste terrible.)
                         setCookie("school", school, 5);
-                }
-                </script><!-- <3 Ben Klein -->
-                
+                } </script><!-- <3 Ben Klein -->
+                <!-- Here's our school selection code: -->
                 <div class="leftmain" style="text-align:center;">
                 <select class="input_main" name="slct" id="slct" onchange="showRoofSize(this.value)">
                         <option value="Amherst Elementary School">Amherst Elementary School</option>
@@ -69,26 +52,18 @@ Beginning of the main, clickable content.
                 </select><br>
                 This roof is<br><span id="roofSize" style="font-size:150px; font-weight:bold;">6200</span><br> meters squared in area.<br><!-- This is where we need to list the size of the roof top in meters, Ben -->
                 </div> <!-- end of left main -->
-        
                 <div id="googlemap" class="rightmain">
                 <img src="http://maps.googleapis.com/maps/api/staticmap?center=5101+Schaad+Rd,+Tennessee+37931&zoom=17&scale=false&size=450x350&maptype=satellite&sensor=false&format=png&visual_refresh=true" height="350" width="450" alt="This is the Google Map for the selected School.">
                 </div> <!-- end of right main -->
-                
                 <div class="buttons"><a class="grey left" href="help.htm">Help</a><a class="red right" href="step2.htm">Continue</a></div>
         </div> <!-- end of wrapper class -->
 </div> <!-- end of main -->
-<!--
-End of the main, clickable content.
--->
-
-
+<!-- End of the main, clickable content. -->
+<!-- All done, display our footer. -->
 <footer>
         <div class="wrapper">
         Copyright &copy; 2014 L&N STEM Academy. All rights reserved.
-        </div><!-- end of wrapper -->
-</footer><!-- end of footer -->
-
+        </div>
+</footer><!-- End of footer -->
 </body>
 </html>
-<!-- http://jsfiddle.net/apaul34208/ZyKar/3/ --> 
-<!-- http://jsfiddle.net/JVYq7/ -->

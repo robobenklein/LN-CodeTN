@@ -1,3 +1,4 @@
+// Get our information from the last steps
 var panelpower = parseFloat(getCookie("panelpower"));
 var kwhcost = parseFloat(getCookie("kwh"));
 var width = parseFloat(getCookie("width"));
@@ -14,6 +15,7 @@ var allpanelsoutputfinalperyear = (individualpanelkwhperyear * panelsNeeded);
 var payofftimeinyears = (install) / (allpanelsoutputfinalperyear * kwhcost);
 var moneysaved10years = ((allpanelsoutputfinalperyear * kwhcost) * 10) - (install);
 var moneyspent = install;
+// Is this gonna pay back in the desired time?
 if (payofftimeinyears <= (payoff / 12)) {
         var goodinvestment = true;
 } else {
