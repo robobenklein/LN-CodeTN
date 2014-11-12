@@ -40,7 +40,7 @@ var payoff = parseFloat(getCookie("payoff"));
 var school = getCookie("school");
 
 // Calculating how many panels can fit on the roof, This is correct, do not change.
-var panelsNeeded = Math.trunc((getRoofSize(school)) / ((width * height) * .00064516));
+var panelsNeeded = (getRoofSize(school)) / ((width * height) * .00064516);
 //should be able to write instead as ((width * height) * .00064516) - Bissell
 //((width * 0.0254) * (height * 0.0254))
 // CORRECT
