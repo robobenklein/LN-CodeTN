@@ -11,10 +11,10 @@ If you have any Problems, Suggestions, or Concerns, please feel free to create a
 
 Our team:
 ---------
-Javascript: Ben Klein
-HTML: Todd Allen
-CSS: Todd Allen
-Maintainer Documentation: Alec Bissel
-User Documentation & Help: Michael Buckley-Durst
-Testers: TaylorAmos, MelodyMor, s050720, JessicaMotto
-Code Review & Debuggers: Michael Glass, Isaiah Howell
+Javascript: Ben Klein  
+HTML: Todd Allen  
+CSS: Todd Allen  
+Maintainer Documentation: Alec Bissel  
+User Documentation & Help: Michael Buckley-Durst  
+Testers: TaylorAmos, MelodyMor, s050720, JessicaMotto  
+Code Review & Debuggers: Michael Glass, Isaiah Howell  
