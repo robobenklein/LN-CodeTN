@@ -6,7 +6,7 @@
         <script language="javascript" type="text/javascript" src="scripts/main.js"></script>
 </head>
 <!-- Beginning of the navigation bar code. -->
-<body>
+<body onload="loadValues()">
 <div id="navbar">
         <div class="wrapper">
         <img src="pictures/lnstem.png" class="left" alt="Team LNSTEM.">
@@ -70,5 +70,16 @@
         Copyright &copy; 2014 L&amp;N STEM Academy. All rights reserved.
         </div>
 </footer><!-- End of footer -->
+<script type="text/javascript">
+function loadValues() {
+        document.getElementById("kwh").value = getCookie("kwh");
+        document.getElementById("width").value = getCookie("width");
+        document.getElementById("height").value = getCookie("height");
+        document.getElementById("roofsize").value = getCookie("roofsize");
+        document.getElementById("install").value = getCookie("install");
+        document.getElementById("payoff").value = getCookie("payoff");
+        document.getElementById("panelpower").value = getCookie("panelpower");
+}
+</script>
 </body>
 </html>
