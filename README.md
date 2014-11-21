@@ -14,7 +14,7 @@ Our team:
 Javascript: Ben Klein  
 HTML: Todd Allen  
 CSS: Todd Allen  
-Maintainer Documentation: Alec Bissell
+Maintainer Documentation: Alec Bissell   
 User Documentation & Help: Michael Buckley-Durst  
 Testers: TaylorAmos, MelodyMor, s050720, JessicaMotto  
 Code Review & Debuggers: Michael Glass, Isaiah Howell  
