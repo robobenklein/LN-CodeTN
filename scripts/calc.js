@@ -7,7 +7,7 @@ var install = parseInt(getCookie("install"));
 var payoff = parseFloat(getCookie("payoff"));
 var school = getCookie("school");
 var percentuse = parseFloat(getCookie("roofsize"));
-// Now fo the actual calculations
+// Now fo' the actual calculations
 var panelsNeeded = ((getRoofSize(school) * (percentuse / 100)) / ((width * height) * .00064516));
 var moneyspent = install * panelsNeeded;
 var individualpanelwattsperyear = (365 * 5.67 * panelpower)
