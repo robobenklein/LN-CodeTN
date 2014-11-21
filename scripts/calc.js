@@ -9,12 +9,13 @@ var school = getCookie("school");
 var percentuse = parseFloat(getCookie("roofsize"));
 // Now fo' the actual calculations
 var panelsNeeded = ((getRoofSize(school) * (percentuse / 100)) / ((width * height) * .00064516));
-var moneyspent = install * panelsNeeded;
 var individualpanelwattsperyear = (365 * 5.67 * panelpower)
 var individualpanelkwhperyear = (individualpanelwattsperyear * 0.001);
 var allpanelsoutputfinalperyear = (individualpanelkwhperyear * panelsNeeded);
-var payofftimeinyears = (moneyspent) / (allpanelsoutputfinalperyear * kwhcost);
-var moneysaved10years = ((allpanelsoutputfinalperyear * kwhcost) * 10) - (moneyspent);
+var payofftimeinyears = (install * panelsNeeded) / (allpanelsoutputfinalperyear * kwhcost);
+var moneysaved10years = ((allpanelsoutputfinalperyear * kwhcost) * 10) - (install * panelsNeeded);
+var moneyspent = install * panelsNeeded;
+
 
 // Is this gonna pay back in the desired time?
 if (payofftimeinyears <= (payoff / 12)) {
