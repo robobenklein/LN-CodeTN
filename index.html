@@ -31,7 +31,7 @@
                 If you need help, click the help box in the bottom left hand corner.</div>
                 <script type="text/javascript"><!-- Ooh, yeah! You like dis script' eh? Well I've got more for you ;) -->
                 function showRoofSize(school) {
-                        if (school == null) {
+                        if (school == null || school == "") {
                                 setCookie("school", "Amherst Elementary School", 1);
                         } else {
                                 setCookie("school", school, 5);
