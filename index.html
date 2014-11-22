@@ -31,11 +31,15 @@
                 If you need help, click the help box in the bottom left hand corner.</div>
                 <script type="text/javascript"><!-- Ooh, yeah! You like dis script' eh? Well I've got more for you ;) -->
                 function showRoofSize(school) {
+                        if (school == null) {
+                                setCookie("school", "Amherst Elementary School", 1);
+                        } else {
+                                setCookie("school", school, 5);
+                        }
                         // Don't mind me taking pre-defined values from our main.js script
-                        document.getElementById("roofSize").innerHTML = getRoofSize(school);
-                        document.getElementById("googlemap").innerHTML = "<img src=\"" + getSchoolURL(school) + "\" height=\"350\" width=\"450\" alt=\"This is the Google Map for the selected School.\">";
+                        document.getElementById("roofSize").innerHTML = getRoofSize(getCookie("school"));
+                        document.getElementById("googlemap").innerHTML = "<img src=\"" + getSchoolURL(getCookie("school")) + "\" height=\"350\" width=\"450\" alt=\"This is the Google Map for the selected School.\">";
                         // Keep our cookie up to date (Stale cookies taste terrible.)
-                        setCookie("school", school, 5);
                 } </script><!-- <3 Ben Klein -->
                 <!-- Here's our school selection code: -->
                 <div class="leftmain" style="text-align:center;">
